@@ -9,7 +9,7 @@ $.get("https://private-anon-4dd301a5cd-wad20postit.apiary-mock.com/profiles", fu
         avatar.find("img").attr("src", noku.avatar)
 
         const name = post.find(".man-name")
-        name.find("h3").text(noku.firstname + noku.lastname)
+        name.find("h3").text(noku.firstname + " " + noku.lastname)
 
         const button = post.find("button")
 

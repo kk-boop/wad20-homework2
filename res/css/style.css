@@ -279,7 +279,7 @@ nav div.avatar-container {
     display: none;
 }
 
-section {
+section.browse-main{
     background-color: #ffffff;
     min-height: 100%;
     padding: 90px 15px 15px 15px;
