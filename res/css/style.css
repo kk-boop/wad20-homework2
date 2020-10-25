@@ -233,3 +233,7 @@ nav div.avatar-container {
     overflow: hidden;
     background-color: rgba(0,0,0,0);
 }
+
+#post-template {
+    display: none;
+}

@@ -29,63 +29,31 @@
     </header>
     <div class="click-out"></div>
     <section class="main-container">
-      <div class="post">
+
+      <div class="post" id="post-template">
         <div class="post-author">
           <span class="post-author-info">
-            <img src="res/images/avatar.png" alt="Post author">
-            <small>John Doe</small>
+            <img  alt="Post author">
+            <small></small>
           </span>
-          <small>Sep 18, 2020 15:16</small>
+          <small></small>
         </div>
         <div class="post-image">
-          <img src="res/images/posts/1.jpg" alt="">
+          <img alt="">
         </div>
         <div class="post-title">
-          <h3>I think it's going to rain</h3>
+          <h3>Oopsie, test title</h3>
         </div>
         <div class="post-actions">
-          <button type="button" name="like" class="like-button">100k</button>
+          <button type="button" name="like" class="like-button">420m</button>
         </div>
       </div>
 
-      <div class="post">
-        <div class="post-author">
-          <span class="post-author-info">
-            <img src="res/images/avatar.png" alt="Post author">
-            <small>John Doe</small>
-          </span>
-          <small>Sep 18, 2020 15:16</small>
-        </div>
-        <div class="post-title">
-          <h3>Which weighs more, a pound of feathers or a pound of bricks?</h3>
-        </div>
-        <div class="post-actions">
-          <button type="button" name="like" class="like-button">15k</button>
-        </div>
-      </div>
 
-      <div class="post">
-        <div class="post-author">
-          <span class="post-author-info">
-            <img src="res/images/avatar.png" alt="Post author">
-            <small>John Doe</small>
-          </span>
-          <small>Sep 18, 2020 17:18</small>
-        </div>
-        <div class="post-image">
-          <img src="res/images/posts/2.jpg" alt="">
-        </div>
-        <div class="post-title">
-          <h3>Felt cute, might delete later</h3>
-        </div>
-        <div class="post-actions">
-          <button type="button" name="like" class="like-button liked">10k</button>
-        </div>
-      </div>
 
     </section>
     <script>
-      let scripts = [ "template.js", "dropdown.js", "index-user.js" ];
+      let scripts = [ "template.js", "dropdown.js", "index-user.js", "index-posts.js" ];
       $(function() {
         scripts.map(s => {
           const el = document.createElement("script");
