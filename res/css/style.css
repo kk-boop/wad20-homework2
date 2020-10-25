@@ -256,7 +256,10 @@ nav div.avatar-container {
 }
 
 .Subscribe-button {
-    border: solid 2px #01579b;
+  /*  border: solid 2px #01579b;*/
+    background-color: purple;
+    color: white;
+    border: solid 2px purple;
 }
 
 .Subscribed {
