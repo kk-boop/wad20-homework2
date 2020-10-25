@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>postIt! Just Post It</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo-container">
+            <img src="res/images/logo.png" alt="postIt">
+        </div>
+        <div class="search-container">
+            <input type="text" name="search"><button type="button">Search</button>
+        </div>
+        <div class="avatar-container dropdown">
+            <img src="res/images/avatar.png" class="avatar" alt="Me">
+            <div class="dropdown-content">
+                <p id="full-name">John Doe</p>
+                <p id="email">jhn@doe.ie</p>
+                <a href="browse.html">Browse</a>
+                <a href="login.html">Log out</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<div class="click-out"></div>
+
+<section>
+    <div class="main-container-profiles">
+        <div class="profile" id="profile-template">
+            <div class="avatar">
+                <img alt="Profile picture">
+            </div>
+            <div class="man-name">
+                <h3>Man bruh</h3>
+            </div>
+            <button type="button" name="Follow" class="Subscribe-button">Follow</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    let scripts = ["dropdown.js", "index-user.js","subscribe.js", "profiles.js" ];
+    $(function() {
+        scripts.map(s => {
+            const el = document.createElement("script");
+            el.src = `res/js/${s}`;
+            return el;
+        }).forEach(el => $("body").append(el));
+    });
+</script>
+</body>
+</html>

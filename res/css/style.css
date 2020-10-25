@@ -234,6 +234,55 @@ nav div.avatar-container {
     background-color: rgba(0,0,0,0);
 }
 
+.profile {
+    width: 45%;
+    height: 25%;
+    margin: 15px auto;
+    box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile .avatar {
+    padding: 10px;
+}
+
+.profile .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.Subscribe-button {
+    border: solid 2px #01579b;
+}
+
+.Subscribed {
+    background-color: white;
+    color: purple;
+    border: solid 2px purple;
+}
+
+.main-container-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
 #post-template {
     display: none;
+}
+
+#profile-template {
+    display: none;
+}
+
+section {
+    background-color: #ffffff;
+    min-height: 100%;
+    padding: 90px 15px 15px 15px;
+    margin: auto auto;
+    width: 50%;
 }
